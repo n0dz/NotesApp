@@ -21,10 +21,17 @@ public class AddNotesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_notes);
 
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.logo);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
+
         EditText editText = (EditText) findViewById(R.id.editText);
 
         Intent intent = getIntent();
         noteId = intent.getIntExtra("noteId", -1);
+
+        editText.setText("");
 
         if(noteId != -1){
             editText.setText(MainActivity.notes.get(noteId));

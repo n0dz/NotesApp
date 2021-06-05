@@ -4,7 +4,7 @@ Simple notes app that uses sharedpreferences for storing data.
 
 ## Features
 - Add a note.
-- Delete a note by long press on it.
+- Delete note by long pressing on it.
 
 ### ScreenShots                  
 ![Main screen](https://user-images.githubusercontent.com/43600925/119437437-f84ecd00-bcd2-11eb-8efc-a04e11f69914.png "MainScreen")
